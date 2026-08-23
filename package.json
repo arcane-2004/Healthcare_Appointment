@@ -1,0 +1,27 @@
+{
+  "name": "healthcare-appointment-manager",
+  "version": "1.0.0",
+  "description": "A complete MERN Healthcare Appointment & Follow-up Manager with Gemini AI, Nodemailer, Google Calendar, and Cron Jobs",
+  "main": "server/server.js",
+  "scripts": {
+    "server": "cd server && npm run dev",
+    "client": "cd client && npm run dev",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "install:all": "npm install && cd server && npm install && cd ../client && npm install",
+    "seed": "cd server && npm run seed",
+    "test": "cd server && npm test"
+  },
+  "keywords": [
+    "mern",
+    "healthcare",
+    "appointment",
+    "gemini-ai",
+    "google-calendar",
+    "cron"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}
